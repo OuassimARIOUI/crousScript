@@ -29,8 +29,8 @@ jobs:
       - name: Cycle de vérification
         run: python main.py --once
         env:
-          CITY: ${{ vars.CITY || 'Lyon' }}
-          MARGIN_KM: ${{ vars.MARGIN_KM || '5' }}
+          CITY: ${{ vars.CITY || 'Guyancourt' }}
+          MARGIN_KM: ${{ vars.MARGIN_KM || '3' }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           HEALTHCHECK_URL: ${{ secrets.HEALTHCHECK_URL }}
